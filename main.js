@@ -1,20 +1,34 @@
-function menuEventClick() {
-  const nav = document.querySelector('#header nav')
-  const toggle = document.querySelectorAll('nav .toggle')
+function mobileNavBar() {
+  class MobileNavBar {
+    constructor(mobileMenu, navList, navLinks) {
+      this.mobileMenu = document.querySelector(mobileMenu)
+      this.navList = document.querySelector(navList)
+      this.navLinks = document.querySelector(navLinks)
+      this.activeClass = 'active'
+    }
 
-  for (const element of toggle) {
-    element.addEventListener('click', function () {
-      nav.classList.toggle('show')
-    })
+    addClickEvent() {
+      this.mobileMenu.addEventListener('click', () =>
+        console.log('Hey! Funcionando!')
+      )
+    }
+
+    init() {
+      if (this.mobileMenu) {
+        this.addClickEvent()
+      }
+
+      return this
+    }
   }
 
-  const links = document.querySelectorAll('nav ul li a')
+  const mobileNavBar = new MobileNavBar(
+    '.mobileMenu',
+    '.navList',
+    '.navList li'
+  )
 
-  for (const link of links) {
-    link.addEventListener('click', function () {
-      nav.classList.remove('show')
-    })
-  }
+  mobileNavBar.init()
 }
 
-menuEventClick()
+mobileNavBar()
