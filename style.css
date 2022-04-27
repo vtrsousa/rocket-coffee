@@ -20,6 +20,7 @@ ul{
   --font-color: #ffffff;
 
   --color-base: #8257E5;
+  --color-border: #29292E;
 }
 
 html{ 
@@ -36,10 +37,12 @@ body{
 header{
   width: 100%;
   height: auto;
-  border-bottom: 1px solid #29292E;
+  border-bottom: 1px solid var(--color-border);
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-color: #000;
 }
 
 nav{
@@ -47,7 +50,7 @@ nav{
   height: 3.66rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 2rem;
 }
 
@@ -56,86 +59,49 @@ nav .logo{
   height: 2rem;
 }
 
+nav ul{
+  list-style: none;
+}
+
 nav ul li{
-  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  height: 3.5rem;
 }
 
-nav ul li a{
-  transition: 0.2s;
-
-  position: relative;
-}
-
-nav ul li a:hover,
-nav ul li a:active{
-  font: 700 1.3rem var(--font-body);
-  color: var(--font-color);
-}
-
-nav ul li a::after {
-  content: '';
-  height: 2px;
-  width: 0;
-
-  background: var(--base-color);
-
-  position: absolute;
-  left: 0;
-  bottom: -1.5rem;
-
-  transition: width 0.2s;
-}
-
-nav .menu{
-  opacity: 0;
-  visibility: hidden;
-
-  top: -20rem;
-  transition: 0.2s;
-}
-
-nav .menu ul {
-  display: none;
-}
-
-nav .show .menu{
-  opacity: 1;
-  visibility: visible;
-
-  height: 100vh;
-  width: 100vw;
-
-  position:fixed;
-  top: 0;
-  left: 0;
-
-  display: grid;
-  place-content: center;
-}
-
-nav.show ul.grid{
-  gap: 4rem;
-}
-
-nav.show .menu ul{
-  display:grid;
-}
-
-.toggle {
-  width: 0.97rem;
-  height: 0.97rem;
-}
-
-nav .icon-close{
-  opacity: 0;
-  visibility: hidden;
+nav .mobile-menu{
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
   
+  cursor: pointer;
+}
+
+nav .mobile-menu .line1{
+  width: 1.5rem;
+  height: 0.125rem;
+  background: var(--color-base);
+  margin: 0.1rem;
+}
+
+nav .mobile-menu .line2{
+  width: 1rem;
+  height: 0.125rem;
+  background: var(--color-base);
+  margin: 0.1rem;
+}
+
+nav .nav-list{
   position: absolute;
-  top: -1.5rem;
-  right: 1.5rem;
+  top: 7.66rem;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
 }
-nav.show div.icon-close{
-  opacity: 1;
-  visibility: visible;
-  top: 1.5rem;
-}
+
