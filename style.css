@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: var(--font-color)
+}
+
+ul{
+  list-style: none;
+}
+
+:root{
+  --font-body: 'Manroe';
+  --font-color: #ffffff;
+
+  --color-base: #8257E5;
+}
+
+html{ 
+  scroll-behavior: smooth;
+}
+
+body{
+  font: 400 1.3rem var(--font-body);
+  color: var(--font-color);
+  background: url('assets/blur-mobile.svg') no-repeat center/cover #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+header{
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #29292E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav{
+  width: 100%;
+  height: 3.66rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+nav .logo{
+  width: 10.68rem;
+  height: 2rem;
+}
+
+nav ul li{
+  text-align: left;
+}
+
+nav ul li a{
+  transition: 0.2s;
+
+  position: relative;
+}
+
+nav ul li a:hover,
+nav ul li a:active{
+  font: 700 1.3rem var(--font-body);
+  color: var(--font-color);
+}
+
+nav ul li a::after {
+  content: '';
+  height: 2px;
+  width: 0;
+
+  background: var(--base-color);
+
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+
+  transition: width 0.2s;
+}
+
+nav .menu{
+  opacity: 0;
+  visibility: hidden;
+
+  top: -20rem;
+  transition: 0.2s;
+}
+
+nav .menu ul {
+  display: none;
+}
+
+nav .show .menu{
+  opacity: 1;
+  visibility: visible;
+
+  height: 100vh;
+  width: 100vw;
+
+  position:fixed;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  place-content: center;
+}
+
+nav.show ul.grid{
+  gap: 4rem;
+}
+
+nav.show .menu ul{
+  display:grid;
+}
+
+.toggle {
+  width: 0.97rem;
+  height: 0.97rem;
+}
+
+nav .icon-close{
+  opacity: 0;
+  visibility: hidden;
+  
+  position: absolute;
+  top: -1.5rem;
+  right: 1.5rem;
+}
+nav.show div.icon-close{
+  opacity: 1;
+  visibility: visible;
+  top: 1.5rem;
+}
