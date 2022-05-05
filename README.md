@@ -11,3 +11,4 @@ https://www.figma.com/file/tFoovGllUttTebdUTDVdT8/RocketCoffee/duplicate
 * Deixar o layout responsivo conforme o figma;
 * Menu Hamburguer na versão mobile;
 * Adicionar Hover nos botões.
+
