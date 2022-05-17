@@ -31,7 +31,7 @@ html{
 body{
   font: 400 1.3rem var(--font-body);
   color: var(--font-color);
-  background: url('assets/blur-mobile.svg') no-repeat center/cover #000;
+  background: url('assets/blur-mobile.svg') no-repeat bottom/cover #000;
   -webkit-font-smoothing: antialiased;
 
   overflow-x: hidden;
@@ -160,5 +160,35 @@ nav.show div.iconMenu{
   
   transition: 0.2s ease-in;
 
+}
+
+main{
+  margin-top: 11.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+main section p{
+  width: 23.31rem;
+  height: 8rem;
+  margin: 0 auto;
+  font: 600 1.3rem var(--font-body);
+  text-align: center;
+  padding: 1.74rem;
+}
+
+main section .buttonPegar{
+  margin: 5.5rem auto;
+  width: 10.88rem;
+  height: 2.18rem;
+  font: 600 0.6875rem var(--font-body);
+  text-align: center;
+  padding: 0.625rem 1.875rem;
+  border: 1px solid var(--color-base);
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 
