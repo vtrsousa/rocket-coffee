@@ -80,7 +80,6 @@ nav{
 
 nav .logo{
   width: 10.68rem;
-  height: 2rem;  
 }
 
 nav ul li a{
@@ -172,13 +171,22 @@ main{
   justify-content: center;
 }
 
-main section p{
-  width: 23.31rem;
-  height: 8rem;
-  margin: 0 auto;
-  font: 600 1.875rem var(--font-body);
+main .text{
   text-align: center;
-  padding: 1.7rem;
+}
+
+main div{
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+
+main .title{
+  font: 600 1.875rem var(--font-body);
+  left: 28px;
+  line-height: 2.56rem;
+  letter-spacing: 0.02rem;
+  padding: 1.75rem;
+  -webkit-font-smoothing: auto;
 }
 
 main section .buttonPegar{
@@ -203,8 +211,5 @@ footer{
 
 footer img:nth-child(1){
   margin: 6.125rem 1.5625rem auto;
-}
-footer img:nth-child(2){
-  object-fit: cover;
 }
 
