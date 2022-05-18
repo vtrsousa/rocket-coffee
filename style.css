@@ -175,11 +175,6 @@ main .text{
   text-align: center;
 }
 
-main div{
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
-}
-
 main .title{
   font: 600 1.875rem var(--font-body);
   left: 28px;
