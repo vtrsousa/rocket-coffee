@@ -198,12 +198,11 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 footer img:nth-child(1){
   margin: 6.125rem 1.5625rem auto;
-  width: 21.625rem;
-  height: 8.0625rem;
 }
 footer img:nth-child(2){
   object-fit: cover;
