@@ -36,7 +36,8 @@ html{
 body{
   font: 400 1.3rem var(--font-body);
   color: var(--font-color);
-  background-color: #000;
+  
+  background: radial-gradient(circle to bottom, #996DDF, transparent 60%);
 
   -webkit-font-smoothing: antialiased;
 
@@ -179,12 +180,6 @@ nav.show div.iconMenu{
 
 main{
   margin-top: calc(5.5rem + 7.43rem);
-
-  background: url('assets/blur-mobile.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #000;
-  background-position: center;
 }
 
 main .text{
