@@ -197,11 +197,16 @@ main section .buttonPegar{
   text-transform: uppercase;
 }
 
-.imgsTitle{
+main section:nth-child(2){
   margin-top: 6.125rem;
+}
+
+.imgsTitle{ 
   display: grid;
   align-items: center;
   justify-items: center;
+  gap: 0;
+  object-fit: cover;
 }
 
 
