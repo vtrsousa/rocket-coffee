@@ -47,7 +47,7 @@ header{
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
 
   background-color: var(--color-background);
 
@@ -166,9 +166,6 @@ nav.show div.iconMenu{
 
 main{
   margin-top: calc(5.5rem + 7.43rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 main .text{
@@ -196,15 +193,11 @@ main section .buttonPegar{
   text-transform: uppercase;
 }
 
-footer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.imgsTitle{
+  margin-top: 6.125rem;
+  display: grid;
   align-items: center;
-  margin: 0 auto;
+  justify-items: center;
 }
 
-footer img:nth-child(1){
-  margin: 6.125rem 1.5625rem auto;
-}
 
