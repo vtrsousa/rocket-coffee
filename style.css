@@ -36,7 +36,7 @@ html{
 body{
   font: 400 1.3rem var(--font-body);
   color: var(--font-color);
-  background: url('assets/blur-mobile.svg') no-repeat bottom/cover #000;
+  background: url('assets/blur-mobile.svg') no-repeat center/cover #000;
   -webkit-font-smoothing: antialiased;
 
   overflow-x: hidden;
@@ -58,6 +58,8 @@ body{
   position: fixed;
   top: 0;
   left: 0;
+
+  z-index: 100;
 }
 
 .container {
@@ -70,7 +72,7 @@ body{
 }
 
 .section{
-  padding: 1rem 0;
+  padding: 0 1rem;
 }
 
 nav{
@@ -183,7 +185,6 @@ main .text{
 
 main .title{
   font: 600 1.875rem var(--font-body);
-  left: 28px;
   line-height: 2.56rem;
   letter-spacing: 0.02rem;
   padding: 1.75rem;
@@ -191,7 +192,7 @@ main .title{
 }
 
 main section .buttonPegar{
-  margin: 5.5rem auto auto;
+  margin: 5.5rem auto 6.125rem auto;
   width: 10.88rem;
   height: 2.18rem;
   font: 600 0.6875rem var(--font-body);
@@ -201,18 +202,17 @@ main section .buttonPegar{
   border-radius: 5px;
   text-transform: uppercase;
 }
-
-main section:nth-child(2){
-  max-width: 346px;
-  margin: 6.125rem auto 0 auto;
+.images{
   display: grid;
-  align-items: flex-end;
   justify-items: center;
-  gap: 0;
+  align-items: center;
 }
-
-.imgsTitle{
-  
+.images img{
   max-width: 346px;
   object-fit: cover;
+}
+
+.image2 img{
+  position: relative;
+  bottom: -6px;
 }
