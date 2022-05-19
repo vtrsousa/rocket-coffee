@@ -15,6 +15,11 @@ ul{
   list-style: none;
 }
 
+img{
+  width: 100%;
+  height: auto;
+}
+
 :root{
   --font-body: 'Manrope';
   --font-color: #ffffff;
@@ -198,15 +203,16 @@ main section .buttonPegar{
 }
 
 main section:nth-child(2){
-  margin-top: 6.125rem;
-}
-
-.imgsTitle{ 
+  max-width: 346px;
+  margin: 6.125rem auto 0 auto;
   display: grid;
-  align-items: center;
+  align-items: flex-end;
   justify-items: center;
   gap: 0;
-  object-fit: cover;
 }
 
-
+.imgsTitle{
+  
+  max-width: 346px;
+  object-fit: cover;
+}
