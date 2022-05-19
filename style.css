@@ -36,19 +36,19 @@ html{
 body{
   font: 400 1.3rem var(--font-body);
   color: var(--font-color);
-  background: url('assets/blur-mobile.svg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   background-color: #000;
-  background-position: center;
-
   -webkit-font-smoothing: antialiased;
 
   overflow-x: hidden;
 }
 
 .bgContainer{
-
+  height: 100%;
+  background: url('assets/blur-mobile.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-position: center;
 }
 
 #header{
