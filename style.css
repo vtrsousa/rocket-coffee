@@ -109,7 +109,7 @@ nav ul li{
   transition: 0.2s ease;
 }
 
-nav ul li::after{
+.menuList::after{
   content: '';
 
   width: 5px;
@@ -124,7 +124,8 @@ nav ul li::after{
   transition: 0.2s ease-in;
 }
 
-nav ul li:hover::after{
+.menuList:hover::after,
+.active::after{
   height: 100%;
   transition: 0.2s ease-in;
 }

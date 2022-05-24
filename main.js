@@ -1,7 +1,7 @@
 function  menuEventClick(){
   const nav = document.querySelector('#header nav')
   const toggle = document.querySelectorAll('nav .toggle')
-  
+   
   for (const element of toggle){
     element.addEventListener('click', function(){
       nav.classList.toggle('show')
@@ -15,6 +15,19 @@ function  menuEventClick(){
       nav.classList.remove('show')
     })
   }
+
+  const menuItems = document.getElementsByClassName("menuList");
+
+  for (const active of menuItems){
+    active.addEventListener('click', function(){
+      
+      const current = document.getElementsByClassName(' active')
+
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    })
+  }
 }
+
 
 menuEventClick()
