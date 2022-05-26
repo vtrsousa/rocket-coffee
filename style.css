@@ -317,28 +317,3 @@ main .title{
 .imageCoffe img{
   max-width: 100%;
 }
-
-@media screen and (min-width: 1200px) {
-  body{
-    background-color: green;
-  }
-}
-
-@media screen and (min-width: 1023px) and (max-width: 1199px) {
-
-  body{
-    background-color: blue;
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1022px) {
-  body{
-    background-color: yellow;
-  }
-}
-
-@media screen and (min-width: 767px) and (max-width: 991px) {
-  body{
-    background-color: red;
-  }
-}
