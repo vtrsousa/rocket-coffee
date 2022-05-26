@@ -8,11 +8,18 @@ function  menuEventClick(){
     })
   }
 
+  const hamburguerMenu = document.querySelector('.hamburguer')
+
+  hamburguerMenu.addEventListener('click', function(){
+    hamburguerMenu.classList.toggle('active');
+  }) 
+
   const links = document.querySelectorAll('nav ul li a')
 
   for (const link of links){
     link.addEventListener('click', function(){
       nav.classList.remove('show')
+      hamburguerMenu.classList.remove('active')
     })
   }
 
@@ -26,7 +33,8 @@ function  menuEventClick(){
       current[0].className = current[0].className.replace(" active", "");
       this.className += " active";
     })
-  }
+  } 
+
 }
 
 menuEventClick()

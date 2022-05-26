@@ -179,25 +179,43 @@ nav.show .menu ul{
   align-items: center;  
 }
 
-nav .iconClose{
-  visibility: hidden;
-  opacity: 0;
-
-  position: absolute;
-  
-  right: 0.1rem;
-
-  transition: 0.1s ease-in;
-
+.hamburguer {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-nav.show div.iconClose{
-  visibility: visible;
-  opacity: 1;
+.hamburguer .line{
+  display: block;
+  background-color: var(--color-base);
+  margin: 2px 0px;
+  transition: transform .5s, opacity .25s;
+}
 
-  top: 1.3rem;
+.hamburguer .line:nth-child(1){
+  display: block;
+  width: 1.5rem;
+  height: 0.125rem;
+}
+
+.hamburguer .line:nth-child(2){
+  display: block;
+  width: 1rem;
+  height: 0.125rem;
   
-  transition: 0.3s ease-in;
+}
+
+.hamburguer.active .line:nth-child(1){
+  transform: translateY(5px) rotate(45deg);
+}
+
+.hamburguer.active .line:nth-child(2){
+  transform: translateY(-1px) rotate(-45deg);
+  width: 1.5rem;
 }
 
 nav.show div.iconMenu{
@@ -294,10 +312,6 @@ main .title{
 
 .imageTitle img{
   max-width: 21.625rem;
-}
-
-.imageCoffe {
-  
 }
 
 .imageCoffe img{
