@@ -275,8 +275,7 @@ main .title{
   
   transition: 0.3s ease-in;
   
-  opacity: 0;
-  visibility: hidden;
+  display: none;
 }
 
 .buttonPegarMenu:hover,
