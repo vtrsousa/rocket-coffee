@@ -259,32 +259,11 @@ main .title{
   transition: 0.3s ease-in;
 }
 
-.buttonPegarMenu{
-  width: 10.88rem;
-  height: 2.18rem;  
-  
-  margin: 5.5rem auto 6.125rem auto;
-
-  border: 1px solid var(--color-base);
-  border-radius: 6px;
-  
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  gap: 0.7rem;
-  
-  transition: 0.3s ease-in;
-  
-  display: none;
-}
-
-.buttonPegarMenu:hover,
 .buttonPegar:hover{
   background-color: var(--color-base);
   transition: 0.3s ease-in;
 }
 
-.buttonPegarMenu p,
 .buttonPegar p{
   font: 600 0.6875rem var(--font-body);
   text-align: center;
@@ -292,7 +271,6 @@ main .title{
   letter-spacing: 0.03rem;
 }
 
-.buttonPegarMenu p::after,
 .buttonPegar p::after{
   content: ' >';
   font: 600 0.8rem var(--font-body);
