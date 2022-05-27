@@ -291,6 +291,8 @@ main .title{
   max-width: 21.625rem;
 }
 
-.imageCoffe img{
+.imageCoffee img{
   max-width: 100%;
+  position: relative;
+  bottom: -0.365rem
 }
