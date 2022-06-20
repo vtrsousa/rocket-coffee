@@ -91,11 +91,12 @@ nav{
   justify-content: space-between;
 
   position: relative;
-
 }
 
 nav .logo{
   width: 10.68rem;
+  height: 2.04rem;
+  background: url('assets/logo-mobile.svg') no-repeat center;
 }
 
 nav ul li{
@@ -226,6 +227,10 @@ nav.show div.iconMenu{
 
 }
 
+header .buttonPegar{
+  display: none;
+}
+
 main{
   margin-top: calc(5.5rem + 7.43rem);
 }
@@ -264,14 +269,18 @@ main .title{
   transition: 0.3s ease-in;
 }
 
-.buttonPegar p{
+.buttonPegar a{
   font: 600 0.6875rem var(--font-body);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.03rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.buttonPegar p::after{
+.buttonPegar a::after{
   content: ' >';
   font: 600 0.8rem var(--font-body);
 }
@@ -287,23 +296,116 @@ main .title{
   object-fit: cover;
 }
 
-.image2 img{
+.imageTitle img{
   max-width: 21.625rem;
 }
 
-.image2 img{
-  max-width: 100%;
-
-  transform: translate(0px);
-	transform: rotate(0deg);
-  animation: float 5s ease-in-out infinite;
+.imageCoffee img{
+  max-width: 26.75rem;
+  position: relative;
+  bottom: -0.36rem;
 }
 
-@keyframes float {
-  0% {transform: translate(-20px, -20px);transform: rotate(1deg);}
-	20% {transform: translate(0px, 0px);transform: rotate(3deg);}
-	40% {transform: translate(-20px, -20px);transform: rotate(1deg);}
-	60% {transform: translate(0px, 0px);transform: rotate(2deg);}
-	80% {transform: translate(-20px, -20px);transform: rotate(1deg);}
-	100% {transform: translate(0px, 0px);transform: rotate(0.5deg);}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  
+}
+
+@media screen and (min-width: 769px) and (max-width: 1278px) {
+
+}
+
+@media screen and (min-width: 1279px) {
+
+  body{
+    background-image: url('assets/blur-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #header{
+    border-bottom: 0;
+
+    background-color: transparent;
+
+    position: static;
+  }
+
+  nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+    position: static;
+  }
+
+  nav .logo{
+    width: 10.88rem;
+    height: 3.125rem;
+    background: url('assets/logo-desktop.svg') no-repeat center;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;  
+  
+    z-index: 1; 
+  }
+  
+  nav ul li{
+    text-align: left;
+    
+    border-bottom: 0;
+    padding: 0.3rem 1rem;
+    
+    transition: 0.2s ease;
+  }
+
+  nav .menu ul{
+    display: flex;
+    margin-top: 0;
+  }
+
+  .menuList::after{
+    height: 0;
+    width: 0;
+  }
+  
+  .menuList:hover::after,
+  .active::after{
+    width: 0;
+  }
+
+  header .buttonPegar{
+    display: inline;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburguer{
+    display: none;
+  }
+
+  main section .buttonPegar{
+    display: none;
+  }
+
+  main .text{
+    display: none;
+  }
+
+  .imageTitle{
+    width: 34.25rem;
+  }
+  
+  .imageCoffee{
+    width: 49.92rem;
+    position: relative;
+    bottom: -0.36rem;
+  }
+  
 }
