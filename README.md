@@ -1,6 +1,6 @@
 *Desafio: RocketCoffee - Rocketseat*
 
-Desenvolvimento de uma Home Page para uma marca de Café.
+Desenvolvimento de uma Homepage para uma marca de Café.
 
 Link de visualizaçao do template do projeto:
 https://www.figma.com/file/tFoovGllUttTebdUTDVdT8/RocketCoffee/duplicate
